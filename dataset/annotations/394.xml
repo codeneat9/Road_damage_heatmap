@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>394.jpg</filename>
+	<path>/Users/bo/Desktop/pothole_image/Tensorflow/workspace/images/train/394.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>363</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>280</xmin>
+			<ymin>86</ymin>
+			<xmax>524</xmax>
+			<ymax>330</ymax>
+		</bndbox>
+	</object>
+</annotation>

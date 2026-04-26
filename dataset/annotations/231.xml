@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Pothole_Image_Data</folder>
+	<filename>231.jpg</filename>
+	<path>/Users/bo/Desktop/pothole_image/Pothole_Image_Data/231.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>857</width>
+		<height>1289</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>damage</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>241</xmin>
+			<ymin>460</ymin>
+			<xmax>857</xmax>
+			<ymax>726</ymax>
+		</bndbox>
+	</object>
+</annotation>

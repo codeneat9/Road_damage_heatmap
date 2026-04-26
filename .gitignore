@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Editor/OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+
+# Large/generated artifacts
+data/tmp_*/
+data/detections/
+dataset/images/
+
+# Optional caches
+.cache/

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>252.jpg</filename>
+	<path>/Users/bo/Desktop/pothole_image/Tensorflow/workspace/images/train/252.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1297</width>
+		<height>855</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>damage</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>447</xmin>
+			<ymin>296</ymin>
+			<xmax>1176</xmax>
+			<ymax>503</ymax>
+		</bndbox>
+	</object>
+</annotation>

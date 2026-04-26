@@ -1,0 +1,9 @@
+path: C:\Users\Bruger\road-damage-heatmap-system\data\yolo
+train: images/train
+val: images/train
+names:
+  0: crack
+  1: damage
+  2: pothole
+  3: pothole_water
+  4: pothole_water_m

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>214.jpg</filename>
+	<path>/Users/bo/Desktop/pothole_image/Tensorflow/workspace/images/train/214.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>960</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>213</xmin>
+			<ymin>250</ymin>
+			<xmax>806</xmax>
+			<ymax>576</ymax>
+		</bndbox>
+	</object>
+</annotation>
