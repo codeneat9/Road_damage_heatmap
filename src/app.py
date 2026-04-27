@@ -32,7 +32,6 @@ def load_env_files() -> None:
     """Load API keys from common env files if present."""
     load_dotenv(Path(".env"), override=False)
     load_dotenv(Path(".env.local"), override=False)
-    load_dotenv(Path(".env.example"), override=False)
 
 
 def parse_lat_lon(text: str) -> Tuple[float, float]:

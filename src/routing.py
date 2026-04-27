@@ -56,7 +56,7 @@ def get_route(
     _validate_coordinate(dst_lat, dst_lon, "Destination")
 
     key = api_key or os.getenv("OPENROUTESERVICE_API_KEY")
-    if not key:
+    if not key or key.startswith("your_"):
         raise ValueError(
             "Missing OpenRouteService API key. Set OPENROUTESERVICE_API_KEY or pass api_key."
         )
@@ -100,39 +100,78 @@ def geocode_place_name(
     focus_lon: float = 78.4867,
     timeout: int = 30,
 ) -> Coordinate:
-    """Resolve a place name into a (lat, lon) coordinate using OpenRouteService geocoding."""
+    """
+    Resolve a place name into a (lat, lon) coordinate.
+
+    Primary provider: OpenRouteService geocoding
+    Fallback provider: OpenStreetMap Nominatim (when ORS geocoding is unavailable)
+    """
     query = place_name.strip()
     if not query:
         raise ValueError("Place name cannot be empty")
 
     key = api_key or os.getenv("OPENROUTESERVICE_API_KEY")
-    if not key:
-        raise ValueError(
-            "Missing OpenRouteService API key. Set OPENROUTESERVICE_API_KEY or pass api_key."
-        )
 
-    url = "https://api.openrouteservice.org/geocode/search"
-    params = {
-        "api_key": key,
-        "text": query,
-        "size": 1,
-        "boundary.country": country_code,
-        "focus.point.lat": focus_lat,
-        "focus.point.lon": focus_lon,
+    if key:
+        url = "https://api.openrouteservice.org/geocode/search"
+        params = {
+            "api_key": key,
+            "text": query,
+            "size": 1,
+            "boundary.country": country_code,
+            "focus.point.lat": focus_lat,
+            "focus.point.lon": focus_lon,
+        }
+
+        try:
+            response = requests.get(url, params=params, timeout=timeout)
+            if response.status_code == 200:
+                data = response.json()
+                features = data.get("features", [])
+                if features:
+                    lon, lat = features[0].get("geometry", {}).get(
+                        "coordinates", [None, None]
+                    )
+                    if lat is not None and lon is not None:
+                        return float(lat), float(lon)
+            elif response.status_code not in (401, 403):
+                # Non-auth errors should surface immediately.
+                raise RuntimeError(
+                    f"OpenRouteService geocoding error {response.status_code}: {response.text[:400]}"
+                )
+        except requests.RequestException:
+            # Fall through to Nominatim fallback.
+            pass
+
+    # Fallback geocoding with OpenStreetMap Nominatim.
+    nominatim_url = "https://nominatim.openstreetmap.org/search"
+    nominatim_params = {
+        "q": query,
+        "format": "jsonv2",
+        "limit": 1,
+        "countrycodes": country_code.lower(),
+    }
+    nominatim_headers = {
+        "User-Agent": "road-damage-heatmap-system/1.0 (educational-project)",
     }
 
-    response = requests.get(url, params=params, timeout=timeout)
-    if response.status_code != 200:
+    fallback_resp = requests.get(
+        nominatim_url,
+        params=nominatim_params,
+        headers=nominatim_headers,
+        timeout=timeout,
+    )
+    if fallback_resp.status_code != 200:
         raise RuntimeError(
-            f"OpenRouteService geocoding error {response.status_code}: {response.text[:400]}"
+            f"Nominatim geocoding error {fallback_resp.status_code}: {fallback_resp.text[:400]}"
         )
 
-    data = response.json()
-    features = data.get("features", [])
-    if not features:
+    results = fallback_resp.json()
+    if not results:
         raise RuntimeError(f"No geocoding result found for '{query}'")
 
-    lon, lat = features[0].get("geometry", {}).get("coordinates", [None, None])
+    lat = results[0].get("lat")
+    lon = results[0].get("lon")
     if lat is None or lon is None:
         raise RuntimeError(f"Invalid geocoding response for '{query}'")
 
