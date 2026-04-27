@@ -1,418 +1,4480 @@
 {
-  "route_points": 30,
+  "route_points": 320,
   "segments": [
     {
       "segment_index": 0,
       "start": [
-        17.385,
-        78.4867
+        18.51951,
+        73.871158
       ],
       "end": [
-        17.3851,
-        78.4868
+        18.520777,
+        73.871749
       ],
-      "distance_m": 15.37,
-      "score": 0.04933178,
-      "quality": "bad"
+      "distance_m": 154.049,
+      "score": 50.26,
+      "quality": "moderate"
     },
     {
       "segment_index": 1,
       "start": [
-        17.3851,
-        78.4868
+        18.520777,
+        73.871749
       ],
       "end": [
-        17.3852,
-        78.4869
+        18.524921,
+        73.868585
       ],
-      "distance_m": 15.37,
-      "score": 0.05913238,
-      "quality": "bad"
+      "distance_m": 568.872,
+      "score": 50.24,
+      "quality": "moderate"
     },
     {
       "segment_index": 2,
       "start": [
-        17.3852,
-        78.4869
+        18.524921,
+        73.868585
       ],
       "end": [
-        17.3853,
-        78.487
+        18.527799,
+        73.8634
       ],
-      "distance_m": 15.37,
-      "score": 0.06594228,
-      "quality": "bad"
+      "distance_m": 633.449,
+      "score": 50.19,
+      "quality": "moderate"
     },
     {
       "segment_index": 3,
       "start": [
-        17.3853,
-        78.487
+        18.527799,
+        73.8634
       ],
       "end": [
-        17.3854,
-        78.4871
+        18.529667,
+        73.859699
       ],
-      "distance_m": 15.37,
-      "score": 0.09386187,
-      "quality": "bad"
+      "distance_m": 442.041,
+      "score": 50.14,
+      "quality": "moderate"
     },
     {
       "segment_index": 4,
       "start": [
-        17.3854,
-        78.4871
+        18.529667,
+        73.859699
       ],
       "end": [
-        17.3855,
-        78.4872
+        18.53279,
+        73.852744
       ],
-      "distance_m": 15.37,
-      "score": 0.10965679,
-      "quality": "bad"
+      "distance_m": 811.335,
+      "score": 50.08,
+      "quality": "moderate"
     },
     {
       "segment_index": 5,
       "start": [
-        17.3855,
-        78.4872
+        18.53279,
+        73.852744
       ],
       "end": [
-        17.3856,
-        78.4873
+        18.537781,
+        73.850373
       ],
-      "distance_m": 15.37,
-      "score": 0.11135259,
-      "quality": "bad"
+      "distance_m": 608.67,
+      "score": 50.02,
+      "quality": "moderate"
     },
     {
       "segment_index": 6,
       "start": [
-        17.3856,
-        78.4873
+        18.537781,
+        73.850373
       ],
       "end": [
-        17.3857,
-        78.4874
+        18.546516,
+        73.851768
       ],
-      "distance_m": 15.37,
-      "score": 0.13376941,
-      "quality": "bad"
+      "distance_m": 982.358,
+      "score": 50.0,
+      "quality": "moderate"
     },
     {
       "segment_index": 7,
       "start": [
-        17.3857,
-        78.4874
+        18.546516,
+        73.851768
       ],
       "end": [
-        17.385800000000003,
-        78.4875
+        18.551801,
+        73.84965
       ],
-      "distance_m": 15.37,
-      "score": 0.14145986,
-      "quality": "bad"
+      "distance_m": 628.651,
+      "score": 49.98,
+      "quality": "moderate"
     },
     {
       "segment_index": 8,
       "start": [
-        17.385800000000003,
-        78.4875
+        18.551801,
+        73.84965
       ],
       "end": [
-        17.385900000000003,
-        78.4876
+        18.563887,
+        73.840836
       ],
-      "distance_m": 15.37,
-      "score": 0.15452281,
-      "quality": "bad"
+      "distance_m": 1633.805,
+      "score": 49.9,
+      "quality": "moderate"
     },
     {
       "segment_index": 9,
       "start": [
-        17.385900000000003,
-        78.4876
+        18.563887,
+        73.840836
       ],
       "end": [
-        17.386000000000003,
-        78.4877
+        18.573058,
+        73.836756
       ],
-      "distance_m": 15.37,
-      "score": 0.17097114,
-      "quality": "bad"
+      "distance_m": 1106.742,
+      "score": 49.8,
+      "quality": "moderate"
     },
     {
       "segment_index": 10,
       "start": [
-        17.386000000000003,
-        78.4877
+        18.573058,
+        73.836756
       ],
       "end": [
-        17.386100000000003,
-        78.4878
+        18.590639,
+        73.831326
       ],
-      "distance_m": 15.37,
-      "score": 0.15316333,
-      "quality": "bad"
+      "distance_m": 2036.97,
+      "score": 49.72,
+      "quality": "moderate"
     },
     {
       "segment_index": 11,
       "start": [
-        17.386100000000003,
-        78.4878
+        18.590639,
+        73.831326
       ],
       "end": [
-        17.386200000000002,
-        78.4879
+        18.603174,
+        73.825391
       ],
-      "distance_m": 15.37,
-      "score": 0.14333373,
-      "quality": "bad"
+      "distance_m": 1527.739,
+      "score": 49.62,
+      "quality": "moderate"
     },
     {
       "segment_index": 12,
       "start": [
-        17.386200000000002,
-        78.4879
+        18.603174,
+        73.825391
       ],
       "end": [
-        17.386300000000002,
-        78.488
+        18.624497,
+        73.806989
       ],
-      "distance_m": 15.37,
-      "score": 0.16020886,
-      "quality": "bad"
+      "distance_m": 3063.019,
+      "score": 49.46,
+      "quality": "moderate"
     },
     {
       "segment_index": 13,
       "start": [
-        17.386300000000002,
-        78.488
+        18.624497,
+        73.806989
       ],
       "end": [
-        17.386400000000002,
-        78.4881
+        18.631814,
+        73.800786
       ],
-      "distance_m": 15.37,
-      "score": 0.17518833,
-      "quality": "bad"
+      "distance_m": 1043.633,
+      "score": 49.3,
+      "quality": "moderate"
     },
     {
       "segment_index": 14,
       "start": [
-        17.386400000000002,
-        78.4881
+        18.631814,
+        73.800786
       ],
       "end": [
-        17.3865,
-        78.48819999999999
+        18.638529,
+        73.79505
       ],
-      "distance_m": 15.37,
-      "score": 0.18058045,
-      "quality": "bad"
+      "distance_m": 960.62,
+      "score": 49.22,
+      "quality": "moderate"
     },
     {
       "segment_index": 15,
       "start": [
-        17.3865,
-        78.48819999999999
+        18.638529,
+        73.79505
       ],
       "end": [
-        17.3866,
-        78.4883
+        18.645933,
+        73.788743
       ],
-      "distance_m": 15.37,
-      "score": 0.15563855,
-      "quality": "bad"
+      "distance_m": 1058.006,
+      "score": 49.14,
+      "quality": "moderate"
     },
     {
       "segment_index": 16,
       "start": [
-        17.3866,
-        78.4883
+        18.645933,
+        73.788743
       ],
       "end": [
-        17.3867,
-        78.4884
+        18.650436,
+        73.784881
       ],
-      "distance_m": 15.37,
-      "score": 0.14352287,
-      "quality": "bad"
+      "distance_m": 645.19,
+      "score": 49.08,
+      "quality": "moderate"
     },
     {
       "segment_index": 17,
       "start": [
-        17.3867,
-        78.4884
+        18.650436,
+        73.784881
       ],
       "end": [
-        17.3868,
-        78.4885
+        18.65822,
+        73.778159
       ],
-      "distance_m": 15.37,
-      "score": 0.15579989,
-      "quality": "bad"
+      "distance_m": 1118.342,
+      "score": 49.01,
+      "quality": "moderate"
     },
     {
       "segment_index": 18,
       "start": [
-        17.3868,
-        78.4885
+        18.65822,
+        73.778159
       ],
       "end": [
-        17.3869,
-        78.4886
+        18.663944,
+        73.772747
       ],
-      "distance_m": 15.37,
-      "score": 0.14793092,
-      "quality": "bad"
+      "distance_m": 854.504,
+      "score": 48.93,
+      "quality": "moderate"
     },
     {
       "segment_index": 19,
       "start": [
-        17.3869,
-        78.4886
+        18.663944,
+        73.772747
       ],
       "end": [
-        17.387,
-        78.4887
+        18.666035,
+        73.770852
       ],
-      "distance_m": 15.37,
-      "score": 0.14046979,
-      "quality": "bad"
+      "distance_m": 306.453,
+      "score": 48.89,
+      "quality": "moderate"
     },
     {
       "segment_index": 20,
       "start": [
-        17.387,
-        78.4887
+        18.666035,
+        73.770852
       ],
       "end": [
-        17.3871,
-        78.4888
+        18.674245,
+        73.763244
       ],
-      "distance_m": 15.37,
-      "score": 0.12181768,
-      "quality": "bad"
+      "distance_m": 1214.798,
+      "score": 48.83,
+      "quality": "moderate"
     },
     {
       "segment_index": 21,
       "start": [
-        17.3871,
-        78.4888
+        18.674245,
+        73.763244
       ],
       "end": [
-        17.3872,
-        78.4889
+        18.678126,
+        73.745885
       ],
-      "distance_m": 15.37,
-      "score": 0.11663525,
-      "quality": "bad"
+      "distance_m": 1878.826,
+      "score": 48.69,
+      "quality": "moderate"
     },
     {
       "segment_index": 22,
       "start": [
-        17.3872,
-        78.4889
+        18.678126,
+        73.745885
       ],
       "end": [
-        17.387300000000003,
-        78.489
+        18.678713,
+        73.733098
       ],
-      "distance_m": 15.37,
-      "score": 0.16554145,
-      "quality": "bad"
+      "distance_m": 1348.543,
+      "score": 48.55,
+      "quality": "moderate"
     },
     {
       "segment_index": 23,
       "start": [
-        17.387300000000003,
-        78.489
+        18.678713,
+        73.733098
       ],
       "end": [
-        17.387400000000003,
-        78.4891
+        18.684574,
+        73.726903
       ],
-      "distance_m": 15.37,
-      "score": 0.21564651,
-      "quality": "bad"
+      "distance_m": 922.26,
+      "score": 48.45,
+      "quality": "moderate"
     },
     {
       "segment_index": 24,
       "start": [
-        17.387400000000003,
-        78.4891
+        18.684574,
+        73.726903
       ],
       "end": [
-        17.387500000000003,
-        78.4892
+        18.695325,
+        73.710179
       ],
-      "distance_m": 15.37,
-      "score": 0.18692581,
-      "quality": "bad"
+      "distance_m": 2128.898,
+      "score": 48.32,
+      "quality": "moderate"
     },
     {
       "segment_index": 25,
       "start": [
-        17.387500000000003,
-        78.4892
+        18.695325,
+        73.710179
       ],
       "end": [
-        17.387600000000003,
-        78.4893
+        18.697905,
+        73.701067
       ],
-      "distance_m": 15.37,
-      "score": 0.1410924,
-      "quality": "bad"
+      "distance_m": 1001.7,
+      "score": 48.18,
+      "quality": "moderate"
     },
     {
       "segment_index": 26,
       "start": [
-        17.387600000000003,
-        78.4893
+        18.697905,
+        73.701067
       ],
       "end": [
-        17.387700000000002,
-        78.4894
+        18.700068,
+        73.692117
       ],
-      "distance_m": 15.37,
-      "score": 0.13261785,
-      "quality": "bad"
+      "distance_m": 972.863,
+      "score": 48.09,
+      "quality": "moderate"
     },
     {
       "segment_index": 27,
       "start": [
-        17.387700000000002,
-        78.4894
+        18.700068,
+        73.692117
       ],
       "end": [
-        17.387800000000002,
-        78.48949999999999
+        18.707016,
+        73.683531
       ],
-      "distance_m": 15.37,
-      "score": 0.16084892,
-      "quality": "bad"
+      "distance_m": 1189.388,
+      "score": 48.0,
+      "quality": "moderate"
     },
     {
       "segment_index": 28,
       "start": [
-        17.387800000000002,
-        78.48949999999999
+        18.707016,
+        73.683531
       ],
       "end": [
-        17.387900000000002,
-        78.4896
+        18.713918,
+        73.676585
       ],
-      "distance_m": 15.37,
-      "score": 0.21356871,
-      "quality": "bad"
+      "distance_m": 1060.264,
+      "score": 47.91,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 29,
+      "start": [
+        18.713918,
+        73.676585
+      ],
+      "end": [
+        18.719665,
+        73.669123
+      ],
+      "distance_m": 1012.887,
+      "score": 47.82,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 30,
+      "start": [
+        18.719665,
+        73.669123
+      ],
+      "end": [
+        18.728237,
+        73.65353
+      ],
+      "distance_m": 1898.687,
+      "score": 47.7,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 31,
+      "start": [
+        18.728237,
+        73.65353
+      ],
+      "end": [
+        18.735074,
+        73.645541
+      ],
+      "distance_m": 1133.897,
+      "score": 47.57,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 32,
+      "start": [
+        18.735074,
+        73.645541
+      ],
+      "end": [
+        18.738112,
+        73.635768
+      ],
+      "distance_m": 1083.144,
+      "score": 47.48,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 33,
+      "start": [
+        18.738112,
+        73.635768
+      ],
+      "end": [
+        18.745842,
+        73.628215
+      ],
+      "distance_m": 1171.043,
+      "score": 47.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 34,
+      "start": [
+        18.745842,
+        73.628215
+      ],
+      "end": [
+        18.749471,
+        73.618702
+      ],
+      "distance_m": 1079.9,
+      "score": 47.3,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 35,
+      "start": [
+        18.749471,
+        73.618702
+      ],
+      "end": [
+        18.752339,
+        73.609822
+      ],
+      "distance_m": 987.894,
+      "score": 47.2,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 36,
+      "start": [
+        18.752339,
+        73.609822
+      ],
+      "end": [
+        18.756524,
+        73.597876
+      ],
+      "distance_m": 1341.13,
+      "score": 47.1,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 37,
+      "start": [
+        18.756524,
+        73.597876
+      ],
+      "end": [
+        18.757132,
+        73.583274
+      ],
+      "distance_m": 1538.924,
+      "score": 46.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 38,
+      "start": [
+        18.757132,
+        73.583274
+      ],
+      "end": [
+        18.760274,
+        73.566747
+      ],
+      "distance_m": 1774.828,
+      "score": 46.84,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 39,
+      "start": [
+        18.760274,
+        73.566747
+      ],
+      "end": [
+        18.759548,
+        73.553478
+      ],
+      "distance_m": 1399.392,
+      "score": 46.7,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 40,
+      "start": [
+        18.759548,
+        73.553478
+      ],
+      "end": [
+        18.758887,
+        73.548807
+      ],
+      "distance_m": 497.263,
+      "score": 46.63,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 41,
+      "start": [
+        18.758887,
+        73.548807
+      ],
+      "end": [
+        18.764285,
+        73.544227
+      ],
+      "distance_m": 769.939,
+      "score": 46.58,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 42,
+      "start": [
+        18.764285,
+        73.544227
+      ],
+      "end": [
+        18.762424,
+        73.541
+      ],
+      "distance_m": 397.814,
+      "score": 46.54,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 43,
+      "start": [
+        18.762424,
+        73.541
+      ],
+      "end": [
+        18.75802,
+        73.531066
+      ],
+      "distance_m": 1154.889,
+      "score": 46.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 44,
+      "start": [
+        18.75802,
+        73.531066
+      ],
+      "end": [
+        18.755954,
+        73.522616
+      ],
+      "distance_m": 918.877,
+      "score": 46.42,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 45,
+      "start": [
+        18.755954,
+        73.522616
+      ],
+      "end": [
+        18.767398,
+        73.503502
+      ],
+      "distance_m": 2381.016,
+      "score": 46.29,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 46,
+      "start": [
+        18.767398,
+        73.503502
+      ],
+      "end": [
+        18.760671,
+        73.475292
+      ],
+      "distance_m": 3062.836,
+      "score": 46.09,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 47,
+      "start": [
+        18.760671,
+        73.475292
+      ],
+      "end": [
+        18.759968,
+        73.468212
+      ],
+      "distance_m": 749.522,
+      "score": 45.95,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 48,
+      "start": [
+        18.759968,
+        73.468212
+      ],
+      "end": [
+        18.761527,
+        73.453761
+      ],
+      "distance_m": 1531.348,
+      "score": 45.85,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 49,
+      "start": [
+        18.761527,
+        73.453761
+      ],
+      "end": [
+        18.760135,
+        73.43978
+      ],
+      "distance_m": 1480.134,
+      "score": 45.73,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 50,
+      "start": [
+        18.760135,
+        73.43978
+      ],
+      "end": [
+        18.758816,
+        73.432723
+      ],
+      "distance_m": 757.354,
+      "score": 45.65,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 51,
+      "start": [
+        18.758816,
+        73.432723
+      ],
+      "end": [
+        18.760077,
+        73.426832
+      ],
+      "distance_m": 635.903,
+      "score": 45.6,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 52,
+      "start": [
+        18.760077,
+        73.426832
+      ],
+      "end": [
+        18.760035,
+        73.418447
+      ],
+      "distance_m": 882.848,
+      "score": 45.54,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 53,
+      "start": [
+        18.760035,
+        73.418447
+      ],
+      "end": [
+        18.754156,
+        73.405794
+      ],
+      "distance_m": 1483.972,
+      "score": 45.46,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 54,
+      "start": [
+        18.754156,
+        73.405794
+      ],
+      "end": [
+        18.758165,
+        73.394077
+      ],
+      "distance_m": 1311.752,
+      "score": 45.36,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 55,
+      "start": [
+        18.758165,
+        73.394077
+      ],
+      "end": [
+        18.760245,
+        73.387288
+      ],
+      "distance_m": 751.288,
+      "score": 45.27,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 56,
+      "start": [
+        18.760245,
+        73.387288
+      ],
+      "end": [
+        18.759679,
+        73.383208
+      ],
+      "distance_m": 434.159,
+      "score": 45.23,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 57,
+      "start": [
+        18.759679,
+        73.383208
+      ],
+      "end": [
+        18.759378,
+        73.379685
+      ],
+      "distance_m": 372.436,
+      "score": 45.2,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 58,
+      "start": [
+        18.759378,
+        73.379685
+      ],
+      "end": [
+        18.758105,
+        73.375003
+      ],
+      "distance_m": 512.881,
+      "score": 45.17,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 59,
+      "start": [
+        18.758105,
+        73.375003
+      ],
+      "end": [
+        18.757594,
+        73.371711
+      ],
+      "distance_m": 351.238,
+      "score": 45.13,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 60,
+      "start": [
+        18.757594,
+        73.371711
+      ],
+      "end": [
+        18.763522,
+        73.368309
+      ],
+      "distance_m": 750.196,
+      "score": 45.1,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 61,
+      "start": [
+        18.763522,
+        73.368309
+      ],
+      "end": [
+        18.768728,
+        73.367397
+      ],
+      "distance_m": 586.79,
+      "score": 45.07,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 62,
+      "start": [
+        18.768728,
+        73.367397
+      ],
+      "end": [
+        18.770653,
+        73.365
+      ],
+      "distance_m": 330.912,
+      "score": 45.05,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 63,
+      "start": [
+        18.770653,
+        73.365
+      ],
+      "end": [
+        18.772594,
+        73.364287
+      ],
+      "distance_m": 228.51,
+      "score": 45.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 64,
+      "start": [
+        18.772594,
+        73.364287
+      ],
+      "end": [
+        18.76764,
+        73.360732
+      ],
+      "distance_m": 665.979,
+      "score": 45.02,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 65,
+      "start": [
+        18.76764,
+        73.360732
+      ],
+      "end": [
+        18.762785,
+        73.355469
+      ],
+      "distance_m": 773.614,
+      "score": 44.99,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 66,
+      "start": [
+        18.762785,
+        73.355469
+      ],
+      "end": [
+        18.763051,
+        73.352639
+      ],
+      "distance_m": 299.423,
+      "score": 44.97,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 67,
+      "start": [
+        18.763051,
+        73.352639
+      ],
+      "end": [
+        18.763098,
+        73.351418
+      ],
+      "distance_m": 128.66,
+      "score": 44.95,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 68,
+      "start": [
+        18.763098,
+        73.351418
+      ],
+      "end": [
+        18.765003,
+        73.351595
+      ],
+      "distance_m": 212.644,
+      "score": 44.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 69,
+      "start": [
+        18.765003,
+        73.351595
+      ],
+      "end": [
+        18.765911,
+        73.352537
+      ],
+      "distance_m": 141.528,
+      "score": 44.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 70,
+      "start": [
+        18.765911,
+        73.352537
+      ],
+      "end": [
+        18.769148,
+        73.353114
+      ],
+      "distance_m": 365.028,
+      "score": 44.95,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 71,
+      "start": [
+        18.769148,
+        73.353114
+      ],
+      "end": [
+        18.770397,
+        73.352774
+      ],
+      "distance_m": 143.421,
+      "score": 44.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 72,
+      "start": [
+        18.770397,
+        73.352774
+      ],
+      "end": [
+        18.76993,
+        73.353768
+      ],
+      "distance_m": 116.825,
+      "score": 44.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 73,
+      "start": [
+        18.76993,
+        73.353768
+      ],
+      "end": [
+        18.773021,
+        73.354315
+      ],
+      "distance_m": 348.495,
+      "score": 44.95,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 74,
+      "start": [
+        18.773021,
+        73.354315
+      ],
+      "end": [
+        18.774791,
+        73.353452
+      ],
+      "distance_m": 216.774,
+      "score": 44.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 75,
+      "start": [
+        18.774791,
+        73.353452
+      ],
+      "end": [
+        18.778074,
+        73.35291
+      ],
+      "distance_m": 369.485,
+      "score": 44.93,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 76,
+      "start": [
+        18.778074,
+        73.35291
+      ],
+      "end": [
+        18.780195,
+        73.35272
+      ],
+      "distance_m": 236.691,
+      "score": 44.92,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 77,
+      "start": [
+        18.780195,
+        73.35272
+      ],
+      "end": [
+        18.782331,
+        73.35118
+      ],
+      "distance_m": 287.569,
+      "score": 44.91,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 78,
+      "start": [
+        18.782331,
+        73.35118
+      ],
+      "end": [
+        18.785076,
+        73.349
+      ],
+      "distance_m": 381.881,
+      "score": 44.89,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 79,
+      "start": [
+        18.785076,
+        73.349
+      ],
+      "end": [
+        18.784943,
+        73.344438
+      ],
+      "distance_m": 480.478,
+      "score": 44.86,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 80,
+      "start": [
+        18.784943,
+        73.344438
+      ],
+      "end": [
+        18.790951,
+        73.33945
+      ],
+      "distance_m": 849.717,
+      "score": 44.81,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 81,
+      "start": [
+        18.790951,
+        73.33945
+      ],
+      "end": [
+        18.796772,
+        73.328798
+      ],
+      "distance_m": 1294.705,
+      "score": 44.74,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 82,
+      "start": [
+        18.796772,
+        73.328798
+      ],
+      "end": [
+        18.800853,
+        73.323963
+      ],
+      "distance_m": 681.873,
+      "score": 44.66,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 83,
+      "start": [
+        18.800853,
+        73.323963
+      ],
+      "end": [
+        18.80492,
+        73.320718
+      ],
+      "distance_m": 566.73,
+      "score": 44.62,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 84,
+      "start": [
+        18.80492,
+        73.320718
+      ],
+      "end": [
+        18.810496,
+        73.314326
+      ],
+      "distance_m": 914.931,
+      "score": 44.57,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 85,
+      "start": [
+        18.810496,
+        73.314326
+      ],
+      "end": [
+        18.8169,
+        73.306617
+      ],
+      "distance_m": 1079.56,
+      "score": 44.5,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 86,
+      "start": [
+        18.8169,
+        73.306617
+      ],
+      "end": [
+        18.823338,
+        73.297005
+      ],
+      "distance_m": 1239.329,
+      "score": 44.42,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 87,
+      "start": [
+        18.823338,
+        73.297005
+      ],
+      "end": [
+        18.836053,
+        73.286913
+      ],
+      "distance_m": 1768.349,
+      "score": 44.32,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 88,
+      "start": [
+        18.836053,
+        73.286913
+      ],
+      "end": [
+        18.840122,
+        73.281692
+      ],
+      "distance_m": 711.765,
+      "score": 44.24,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 89,
+      "start": [
+        18.840122,
+        73.281692
+      ],
+      "end": [
+        18.845601,
+        73.278446
+      ],
+      "distance_m": 698.468,
+      "score": 44.2,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 90,
+      "start": [
+        18.845601,
+        73.278446
+      ],
+      "end": [
+        18.856793,
+        73.27506
+      ],
+      "distance_m": 1294.497,
+      "score": 44.15,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 91,
+      "start": [
+        18.856793,
+        73.27506
+      ],
+      "end": [
+        18.866139,
+        73.272902
+      ],
+      "distance_m": 1063.747,
+      "score": 44.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 92,
+      "start": [
+        18.866139,
+        73.272902
+      ],
+      "end": [
+        18.871543,
+        73.271879
+      ],
+      "distance_m": 610.462,
+      "score": 44.08,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 93,
+      "start": [
+        18.871543,
+        73.271879
+      ],
+      "end": [
+        18.886784,
+        73.266205
+      ],
+      "distance_m": 1796.793,
+      "score": 44.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 94,
+      "start": [
+        18.886784,
+        73.266205
+      ],
+      "end": [
+        18.892029,
+        73.259967
+      ],
+      "distance_m": 877.977,
+      "score": 43.96,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 95,
+      "start": [
+        18.892029,
+        73.259967
+      ],
+      "end": [
+        18.897348,
+        73.251614
+      ],
+      "distance_m": 1059.26,
+      "score": 43.89,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 96,
+      "start": [
+        18.897348,
+        73.251614
+      ],
+      "end": [
+        18.901191,
+        73.240913
+      ],
+      "distance_m": 1204.124,
+      "score": 43.8,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 97,
+      "start": [
+        18.901191,
+        73.240913
+      ],
+      "end": [
+        18.90104,
+        73.22922
+      ],
+      "distance_m": 1230.209,
+      "score": 43.71,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 98,
+      "start": [
+        18.90104,
+        73.22922
+      ],
+      "end": [
+        18.90156,
+        73.21591
+      ],
+      "distance_m": 1401.393,
+      "score": 43.62,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 99,
+      "start": [
+        18.90156,
+        73.21591
+      ],
+      "end": [
+        18.905367,
+        73.209432
+      ],
+      "distance_m": 802.248,
+      "score": 43.54,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 100,
+      "start": [
+        18.905367,
+        73.209432
+      ],
+      "end": [
+        18.91272,
+        73.20616
+      ],
+      "distance_m": 887.112,
+      "score": 43.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 101,
+      "start": [
+        18.91272,
+        73.20616
+      ],
+      "end": [
+        18.9153,
+        73.20271
+      ],
+      "distance_m": 462.607,
+      "score": 43.45,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 102,
+      "start": [
+        18.9153,
+        73.20271
+      ],
+      "end": [
+        18.923187,
+        73.198916
+      ],
+      "distance_m": 963.528,
+      "score": 43.41,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 103,
+      "start": [
+        18.923187,
+        73.198916
+      ],
+      "end": [
+        18.929472,
+        73.195585
+      ],
+      "distance_m": 781.768,
+      "score": 43.37,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 104,
+      "start": [
+        18.929472,
+        73.195585
+      ],
+      "end": [
+        18.93457,
+        73.19111
+      ],
+      "distance_m": 736.806,
+      "score": 43.33,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 105,
+      "start": [
+        18.93457,
+        73.19111
+      ],
+      "end": [
+        18.94462,
+        73.18085
+      ],
+      "distance_m": 1553.471,
+      "score": 43.26,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 106,
+      "start": [
+        18.94462,
+        73.18085
+      ],
+      "end": [
+        18.953592,
+        73.170603
+      ],
+      "distance_m": 1468.555,
+      "score": 43.16,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 107,
+      "start": [
+        18.953592,
+        73.170603
+      ],
+      "end": [
+        18.967838,
+        73.159113
+      ],
+      "distance_m": 1992.317,
+      "score": 43.05,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 108,
+      "start": [
+        18.967838,
+        73.159113
+      ],
+      "end": [
+        18.991362,
+        73.138371
+      ],
+      "distance_m": 3405.727,
+      "score": 42.89,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 109,
+      "start": [
+        18.991362,
+        73.138371
+      ],
+      "end": [
+        19.000221,
+        73.130028
+      ],
+      "distance_m": 1319.021,
+      "score": 42.75,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 110,
+      "start": [
+        19.000221,
+        73.130028
+      ],
+      "end": [
+        19.015576,
+        73.111556
+      ],
+      "distance_m": 2585.838,
+      "score": 42.62,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 111,
+      "start": [
+        19.015576,
+        73.111556
+      ],
+      "end": [
+        19.018182,
+        73.10602
+      ],
+      "distance_m": 650.129,
+      "score": 42.52,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 112,
+      "start": [
+        19.018182,
+        73.10602
+      ],
+      "end": [
+        19.031341,
+        73.105371
+      ],
+      "distance_m": 1464.804,
+      "score": 42.48,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 113,
+      "start": [
+        19.031341,
+        73.105371
+      ],
+      "end": [
+        19.044731,
+        73.103619
+      ],
+      "distance_m": 1500.246,
+      "score": 42.44,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 114,
+      "start": [
+        19.044731,
+        73.103619
+      ],
+      "end": [
+        19.052371,
+        73.099967
+      ],
+      "distance_m": 932.223,
+      "score": 42.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 115,
+      "start": [
+        19.052371,
+        73.099967
+      ],
+      "end": [
+        19.062372,
+        73.095259
+      ],
+      "distance_m": 1217.177,
+      "score": 42.34,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 116,
+      "start": [
+        19.062372,
+        73.095259
+      ],
+      "end": [
+        19.070068,
+        73.090521
+      ],
+      "distance_m": 990.082,
+      "score": 42.29,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 117,
+      "start": [
+        19.070068,
+        73.090521
+      ],
+      "end": [
+        19.080415,
+        73.086382
+      ],
+      "distance_m": 1230.009,
+      "score": 42.24,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 118,
+      "start": [
+        19.080415,
+        73.086382
+      ],
+      "end": [
+        19.087729,
+        73.079786
+      ],
+      "distance_m": 1068.576,
+      "score": 42.18,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 119,
+      "start": [
+        19.087729,
+        73.079786
+      ],
+      "end": [
+        19.096149,
+        73.072919
+      ],
+      "distance_m": 1182.056,
+      "score": 42.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 120,
+      "start": [
+        19.096149,
+        73.072919
+      ],
+      "end": [
+        19.103496,
+        73.067894
+      ],
+      "distance_m": 972.72,
+      "score": 42.05,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 121,
+      "start": [
+        19.103496,
+        73.067894
+      ],
+      "end": [
+        19.113594,
+        73.060772
+      ],
+      "distance_m": 1349.344,
+      "score": 41.99,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 122,
+      "start": [
+        19.113594,
+        73.060772
+      ],
+      "end": [
+        19.119556,
+        73.056647
+      ],
+      "distance_m": 792.034,
+      "score": 41.93,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 123,
+      "start": [
+        19.119556,
+        73.056647
+      ],
+      "end": [
+        19.127208,
+        73.055077
+      ],
+      "distance_m": 866.703,
+      "score": 41.9,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 124,
+      "start": [
+        19.127208,
+        73.055077
+      ],
+      "end": [
+        19.134248,
+        73.051418
+      ],
+      "distance_m": 872.097,
+      "score": 41.86,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 125,
+      "start": [
+        19.134248,
+        73.051418
+      ],
+      "end": [
+        19.142899,
+        73.046865
+      ],
+      "distance_m": 1074.291,
+      "score": 41.81,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 126,
+      "start": [
+        19.142899,
+        73.046865
+      ],
+      "end": [
+        19.145552,
+        73.042211
+      ],
+      "distance_m": 570.99,
+      "score": 41.77,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 127,
+      "start": [
+        19.145552,
+        73.042211
+      ],
+      "end": [
+        19.151154,
+        73.035582
+      ],
+      "distance_m": 934.289,
+      "score": 41.72,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 128,
+      "start": [
+        19.151154,
+        73.035582
+      ],
+      "end": [
+        19.160044,
+        73.030026
+      ],
+      "distance_m": 1147.936,
+      "score": 41.66,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 129,
+      "start": [
+        19.160044,
+        73.030026
+      ],
+      "end": [
+        19.162582,
+        73.022048
+      ],
+      "distance_m": 884.212,
+      "score": 41.6,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 130,
+      "start": [
+        19.162582,
+        73.022048
+      ],
+      "end": [
+        19.169644,
+        73.022175
+      ],
+      "distance_m": 785.372,
+      "score": 41.56,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 131,
+      "start": [
+        19.169644,
+        73.022175
+      ],
+      "end": [
+        19.171178,
+        73.020754
+      ],
+      "distance_m": 226.648,
+      "score": 41.55,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 132,
+      "start": [
+        19.171178,
+        73.020754
+      ],
+      "end": [
+        19.174793,
+        73.017039
+      ],
+      "distance_m": 560.193,
+      "score": 41.53,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 133,
+      "start": [
+        19.174793,
+        73.017039
+      ],
+      "end": [
+        19.184486,
+        73.019027
+      ],
+      "distance_m": 1097.848,
+      "score": 41.51,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 134,
+      "start": [
+        19.184486,
+        73.019027
+      ],
+      "end": [
+        19.190266,
+        73.019957
+      ],
+      "distance_m": 650.085,
+      "score": 41.5,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 135,
+      "start": [
+        19.190266,
+        73.019957
+      ],
+      "end": [
+        19.198109,
+        73.023174
+      ],
+      "distance_m": 935.249,
+      "score": 41.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 136,
+      "start": [
+        19.198109,
+        73.023174
+      ],
+      "end": [
+        19.205945,
+        73.01801
+      ],
+      "distance_m": 1026.282,
+      "score": 41.47,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 137,
+      "start": [
+        19.205945,
+        73.01801
+      ],
+      "end": [
+        19.210794,
+        73.016174
+      ],
+      "distance_m": 572.614,
+      "score": 41.43,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 138,
+      "start": [
+        19.210794,
+        73.016174
+      ],
+      "end": [
+        19.213737,
+        73.006676
+      ],
+      "distance_m": 1049.627,
+      "score": 41.38,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 139,
+      "start": [
+        19.213737,
+        73.006676
+      ],
+      "end": [
+        19.208396,
+        73.002386
+      ],
+      "distance_m": 745.402,
+      "score": 41.34,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 140,
+      "start": [
+        19.208396,
+        73.002386
+      ],
+      "end": [
+        19.211671,
+        72.978467
+      ],
+      "distance_m": 2537.841,
+      "score": 41.25,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 141,
+      "start": [
+        19.211671,
+        72.978467
+      ],
+      "end": [
+        19.215143,
+        72.977613
+      ],
+      "distance_m": 396.346,
+      "score": 41.16,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 142,
+      "start": [
+        19.215143,
+        72.977613
+      ],
+      "end": [
+        19.219439,
+        72.97785
+      ],
+      "distance_m": 478.341,
+      "score": 41.15,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 143,
+      "start": [
+        19.219439,
+        72.97785
+      ],
+      "end": [
+        19.239588,
+        72.975552
+      ],
+      "distance_m": 2253.42,
+      "score": 41.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 144,
+      "start": [
+        19.239588,
+        72.975552
+      ],
+      "end": [
+        19.248352,
+        72.974836
+      ],
+      "distance_m": 977.407,
+      "score": 41.07,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 145,
+      "start": [
+        19.248352,
+        72.974836
+      ],
+      "end": [
+        19.257126,
+        72.970628
+      ],
+      "distance_m": 1070.97,
+      "score": 41.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 146,
+      "start": [
+        19.257126,
+        72.970628
+      ],
+      "end": [
+        19.269153,
+        72.965516
+      ],
+      "distance_m": 1440.981,
+      "score": 40.97,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 147,
+      "start": [
+        19.269153,
+        72.965516
+      ],
+      "end": [
+        19.274575,
+        72.960051
+      ],
+      "distance_m": 832.187,
+      "score": 40.92,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 148,
+      "start": [
+        19.274575,
+        72.960051
+      ],
+      "end": [
+        19.279802,
+        72.955809
+      ],
+      "distance_m": 732.156,
+      "score": 40.87,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 149,
+      "start": [
+        19.279802,
+        72.955809
+      ],
+      "end": [
+        19.283855,
+        72.951043
+      ],
+      "distance_m": 673.301,
+      "score": 40.83,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 150,
+      "start": [
+        19.283855,
+        72.951043
+      ],
+      "end": [
+        19.286713,
+        72.93915
+      ],
+      "distance_m": 1288.053,
+      "score": 40.77,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 151,
+      "start": [
+        19.286713,
+        72.93915
+      ],
+      "end": [
+        19.285415,
+        72.937016
+      ],
+      "distance_m": 266.45,
+      "score": 40.72,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 152,
+      "start": [
+        19.285415,
+        72.937016
+      ],
+      "end": [
+        19.285314,
+        72.933002
+      ],
+      "distance_m": 421.44,
+      "score": 40.71,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 153,
+      "start": [
+        19.285314,
+        72.933002
+      ],
+      "end": [
+        19.280593,
+        72.931181
+      ],
+      "distance_m": 558.662,
+      "score": 40.69,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 154,
+      "start": [
+        19.280593,
+        72.931181
+      ],
+      "end": [
+        19.281057,
+        72.928373
+      ],
+      "distance_m": 299.205,
+      "score": 40.68,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 155,
+      "start": [
+        19.281057,
+        72.928373
+      ],
+      "end": [
+        19.278909,
+        72.922677
+      ],
+      "distance_m": 643.79,
+      "score": 40.66,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 156,
+      "start": [
+        19.278909,
+        72.922677
+      ],
+      "end": [
+        19.278657,
+        72.918977
+      ],
+      "distance_m": 389.36,
+      "score": 40.63,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 157,
+      "start": [
+        19.278657,
+        72.918977
+      ],
+      "end": [
+        19.276916,
+        72.91177
+      ],
+      "distance_m": 780.827,
+      "score": 40.6,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 158,
+      "start": [
+        19.276916,
+        72.91177
+      ],
+      "end": [
+        19.2828,
+        72.906551
+      ],
+      "distance_m": 853.307,
+      "score": 40.55,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 159,
+      "start": [
+        19.2828,
+        72.906551
+      ],
+      "end": [
+        19.285002,
+        72.903065
+      ],
+      "distance_m": 440.248,
+      "score": 40.52,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 160,
+      "start": [
+        19.285002,
+        72.903065
+      ],
+      "end": [
+        19.297537,
+        72.906316
+      ],
+      "distance_m": 1434.982,
+      "score": 40.5,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 161,
+      "start": [
+        19.297537,
+        72.906316
+      ],
+      "end": [
+        19.308465,
+        72.900628
+      ],
+      "distance_m": 1353.837,
+      "score": 40.46,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 162,
+      "start": [
+        19.308465,
+        72.900628
+      ],
+      "end": [
+        19.315879,
+        72.899703
+      ],
+      "distance_m": 830.094,
+      "score": 40.42,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 163,
+      "start": [
+        19.315879,
+        72.899703
+      ],
+      "end": [
+        19.321403,
+        72.895579
+      ],
+      "distance_m": 751.373,
+      "score": 40.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 164,
+      "start": [
+        19.321403,
+        72.895579
+      ],
+      "end": [
+        19.333185,
+        72.895819
+      ],
+      "distance_m": 1310.341,
+      "score": 40.36,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 165,
+      "start": [
+        19.333185,
+        72.895819
+      ],
+      "end": [
+        19.341127,
+        72.892484
+      ],
+      "distance_m": 949.907,
+      "score": 40.32,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 166,
+      "start": [
+        19.341127,
+        72.892484
+      ],
+      "end": [
+        19.347111,
+        72.892118
+      ],
+      "distance_m": 666.498,
+      "score": 40.29,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 167,
+      "start": [
+        19.347111,
+        72.892118
+      ],
+      "end": [
+        19.355309,
+        72.893128
+      ],
+      "distance_m": 917.714,
+      "score": 40.28,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 168,
+      "start": [
+        19.355309,
+        72.893128
+      ],
+      "end": [
+        19.363508,
+        72.89286
+      ],
+      "distance_m": 912.121,
+      "score": 40.26,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 169,
+      "start": [
+        19.363508,
+        72.89286
+      ],
+      "end": [
+        19.374197,
+        72.895498
+      ],
+      "distance_m": 1220.353,
+      "score": 40.25,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 170,
+      "start": [
+        19.374197,
+        72.895498
+      ],
+      "end": [
+        19.384648,
+        72.8975
+      ],
+      "distance_m": 1180.92,
+      "score": 40.24,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 171,
+      "start": [
+        19.384648,
+        72.8975
+      ],
+      "end": [
+        19.396019,
+        72.888102
+      ],
+      "distance_m": 1603.239,
+      "score": 40.19,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 172,
+      "start": [
+        19.396019,
+        72.888102
+      ],
+      "end": [
+        19.405174,
+        72.88237
+      ],
+      "distance_m": 1182.252,
+      "score": 40.12,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 173,
+      "start": [
+        19.405174,
+        72.88237
+      ],
+      "end": [
+        19.40857,
+        72.87864
+      ],
+      "distance_m": 543.715,
+      "score": 40.07,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 174,
+      "start": [
+        19.40857,
+        72.87864
+      ],
+      "end": [
+        19.418033,
+        72.874766
+      ],
+      "distance_m": 1127.948,
+      "score": 40.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 175,
+      "start": [
+        19.418033,
+        72.874766
+      ],
+      "end": [
+        19.423916,
+        72.875131
+      ],
+      "distance_m": 655.279,
+      "score": 40.0,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 176,
+      "start": [
+        19.423916,
+        72.875131
+      ],
+      "end": [
+        19.431741,
+        72.872761
+      ],
+      "distance_m": 904.898,
+      "score": 39.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 177,
+      "start": [
+        19.431741,
+        72.872761
+      ],
+      "end": [
+        19.437018,
+        72.876827
+      ],
+      "distance_m": 725.319,
+      "score": 39.97,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 178,
+      "start": [
+        19.437018,
+        72.876827
+      ],
+      "end": [
+        19.447534,
+        72.88282
+      ],
+      "distance_m": 1327.478,
+      "score": 39.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 179,
+      "start": [
+        19.447534,
+        72.88282
+      ],
+      "end": [
+        19.458488,
+        72.885206
+      ],
+      "distance_m": 1243.454,
+      "score": 39.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 180,
+      "start": [
+        19.458488,
+        72.885206
+      ],
+      "end": [
+        19.46568,
+        72.886964
+      ],
+      "distance_m": 820.678,
+      "score": 39.97,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 181,
+      "start": [
+        19.46568,
+        72.886964
+      ],
+      "end": [
+        19.474723,
+        72.893407
+      ],
+      "distance_m": 1211.341,
+      "score": 39.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 182,
+      "start": [
+        19.474723,
+        72.893407
+      ],
+      "end": [
+        19.489616,
+        72.905503
+      ],
+      "distance_m": 2085.728,
+      "score": 40.01,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 183,
+      "start": [
+        19.489616,
+        72.905503
+      ],
+      "end": [
+        19.4951,
+        72.909846
+      ],
+      "distance_m": 760.981,
+      "score": 40.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 184,
+      "start": [
+        19.4951,
+        72.909846
+      ],
+      "end": [
+        19.499983,
+        72.91784
+      ],
+      "distance_m": 998.459,
+      "score": 40.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 185,
+      "start": [
+        19.499983,
+        72.91784
+      ],
+      "end": [
+        19.507815,
+        72.917343
+      ],
+      "distance_m": 872.435,
+      "score": 40.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 186,
+      "start": [
+        19.507815,
+        72.917343
+      ],
+      "end": [
+        19.522551,
+        72.916749
+      ],
+      "distance_m": 1639.751,
+      "score": 40.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 187,
+      "start": [
+        19.522551,
+        72.916749
+      ],
+      "end": [
+        19.545292,
+        72.915455
+      ],
+      "distance_m": 2532.317,
+      "score": 39.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 188,
+      "start": [
+        19.545292,
+        72.915455
+      ],
+      "end": [
+        19.565906,
+        72.914415
+      ],
+      "distance_m": 2294.761,
+      "score": 39.92,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 189,
+      "start": [
+        19.565906,
+        72.914415
+      ],
+      "end": [
+        19.588324,
+        72.913933
+      ],
+      "distance_m": 2493.279,
+      "score": 39.86,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 190,
+      "start": [
+        19.588324,
+        72.913933
+      ],
+      "end": [
+        19.596594,
+        72.914159
+      ],
+      "distance_m": 919.887,
+      "score": 39.82,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 191,
+      "start": [
+        19.596594,
+        72.914159
+      ],
+      "end": [
+        19.605311,
+        72.914836
+      ],
+      "distance_m": 971.877,
+      "score": 39.8,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 192,
+      "start": [
+        19.605311,
+        72.914836
+      ],
+      "end": [
+        19.622441,
+        72.91019
+      ],
+      "distance_m": 1965.95,
+      "score": 39.75,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 193,
+      "start": [
+        19.622441,
+        72.91019
+      ],
+      "end": [
+        19.628478,
+        72.913606
+      ],
+      "distance_m": 760.675,
+      "score": 39.72,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 194,
+      "start": [
+        19.628478,
+        72.913606
+      ],
+      "end": [
+        19.64267,
+        72.915249
+      ],
+      "distance_m": 1587.432,
+      "score": 39.71,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 195,
+      "start": [
+        19.64267,
+        72.915249
+      ],
+      "end": [
+        19.65373,
+        72.906554
+      ],
+      "distance_m": 1530.209,
+      "score": 39.65,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 196,
+      "start": [
+        19.65373,
+        72.906554
+      ],
+      "end": [
+        19.676681,
+        72.906065
+      ],
+      "distance_m": 2552.548,
+      "score": 39.58,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 197,
+      "start": [
+        19.676681,
+        72.906065
+      ],
+      "end": [
+        19.686587,
+        72.909118
+      ],
+      "distance_m": 1146.939,
+      "score": 39.55,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 198,
+      "start": [
+        19.686587,
+        72.909118
+      ],
+      "end": [
+        19.69338,
+        72.910603
+      ],
+      "distance_m": 771.181,
+      "score": 39.54,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 199,
+      "start": [
+        19.69338,
+        72.910603
+      ],
+      "end": [
+        19.704911,
+        72.910581
+      ],
+      "distance_m": 1282.191,
+      "score": 39.52,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 200,
+      "start": [
+        19.704911,
+        72.910581
+      ],
+      "end": [
+        19.707403,
+        72.91962
+      ],
+      "distance_m": 985.966,
+      "score": 39.53,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 201,
+      "start": [
+        19.707403,
+        72.91962
+      ],
+      "end": [
+        19.713941,
+        72.933106
+      ],
+      "distance_m": 1587.906,
+      "score": 39.58,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 202,
+      "start": [
+        19.713941,
+        72.933106
+      ],
+      "end": [
+        19.719646,
+        72.934295
+      ],
+      "distance_m": 646.461,
+      "score": 39.61,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 203,
+      "start": [
+        19.719646,
+        72.934295
+      ],
+      "end": [
+        19.728295,
+        72.926744
+      ],
+      "distance_m": 1244.83,
+      "score": 39.57,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 204,
+      "start": [
+        19.728295,
+        72.926744
+      ],
+      "end": [
+        19.741442,
+        72.916489
+      ],
+      "distance_m": 1813.595,
+      "score": 39.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 205,
+      "start": [
+        19.741442,
+        72.916489
+      ],
+      "end": [
+        19.773727,
+        72.913487
+      ],
+      "distance_m": 3603.648,
+      "score": 39.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 206,
+      "start": [
+        19.773727,
+        72.913487
+      ],
+      "end": [
+        19.790227,
+        72.912026
+      ],
+      "distance_m": 1841.074,
+      "score": 39.31,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 207,
+      "start": [
+        19.790227,
+        72.912026
+      ],
+      "end": [
+        19.79846,
+        72.913487
+      ],
+      "distance_m": 928.141,
+      "score": 39.28,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 208,
+      "start": [
+        19.79846,
+        72.913487
+      ],
+      "end": [
+        19.808156,
+        72.926861
+      ],
+      "distance_m": 1766.377,
+      "score": 39.3,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 209,
+      "start": [
+        19.808156,
+        72.926861
+      ],
+      "end": [
+        19.818259,
+        72.936255
+      ],
+      "distance_m": 1492.578,
+      "score": 39.33,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 210,
+      "start": [
+        19.818259,
+        72.936255
+      ],
+      "end": [
+        19.822928,
+        72.945304
+      ],
+      "distance_m": 1079.619,
+      "score": 39.37,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 211,
+      "start": [
+        19.822928,
+        72.945304
+      ],
+      "end": [
+        19.845245,
+        72.948791
+      ],
+      "distance_m": 2508.198,
+      "score": 39.37,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 212,
+      "start": [
+        19.845245,
+        72.948791
+      ],
+      "end": [
+        19.857471,
+        72.9462
+      ],
+      "distance_m": 1386.214,
+      "score": 39.32,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 213,
+      "start": [
+        19.857471,
+        72.9462
+      ],
+      "end": [
+        19.876142,
+        72.944621
+      ],
+      "distance_m": 2082.677,
+      "score": 39.27,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 214,
+      "start": [
+        19.876142,
+        72.944621
+      ],
+      "end": [
+        19.883914,
+        72.944763
+      ],
+      "distance_m": 864.335,
+      "score": 39.23,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 215,
+      "start": [
+        19.883914,
+        72.944763
+      ],
+      "end": [
+        19.899675,
+        72.940808
+      ],
+      "distance_m": 1800.672,
+      "score": 39.18,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 216,
+      "start": [
+        19.899675,
+        72.940808
+      ],
+      "end": [
+        19.91101,
+        72.939872
+      ],
+      "distance_m": 1264.188,
+      "score": 39.13,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 217,
+      "start": [
+        19.91101,
+        72.939872
+      ],
+      "end": [
+        19.933089,
+        72.933843
+      ],
+      "distance_m": 2534.685,
+      "score": 39.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 218,
+      "start": [
+        19.933089,
+        72.933843
+      ],
+      "end": [
+        19.948612,
+        72.933994
+      ],
+      "distance_m": 1726.151,
+      "score": 38.99,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 219,
+      "start": [
+        19.948612,
+        72.933994
+      ],
+      "end": [
+        19.985191,
+        72.926839
+      ],
+      "distance_m": 4135.566,
+      "score": 38.9,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 220,
+      "start": [
+        19.985191,
+        72.926839
+      ],
+      "end": [
+        20.017359,
+        72.925303
+      ],
+      "distance_m": 3580.517,
+      "score": 38.78,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 221,
+      "start": [
+        20.017359,
+        72.925303
+      ],
+      "end": [
+        20.052656,
+        72.917817
+      ],
+      "distance_m": 4001.999,
+      "score": 38.66,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 222,
+      "start": [
+        20.052656,
+        72.917817
+      ],
+      "end": [
+        20.090633,
+        72.91253
+      ],
+      "distance_m": 4258.798,
+      "score": 38.52,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 223,
+      "start": [
+        20.090633,
+        72.91253
+      ],
+      "end": [
+        20.105451,
+        72.915109
+      ],
+      "distance_m": 1669.55,
+      "score": 38.44,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 224,
+      "start": [
+        20.105451,
+        72.915109
+      ],
+      "end": [
+        20.130246,
+        72.916947
+      ],
+      "distance_m": 2763.749,
+      "score": 38.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 225,
+      "start": [
+        20.130246,
+        72.916947
+      ],
+      "end": [
+        20.143864,
+        72.916338
+      ],
+      "distance_m": 1515.587,
+      "score": 38.34,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 226,
+      "start": [
+        20.143864,
+        72.916338
+      ],
+      "end": [
+        20.154548,
+        72.913529
+      ],
+      "distance_m": 1223.66,
+      "score": 38.29,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 227,
+      "start": [
+        20.154548,
+        72.913529
+      ],
+      "end": [
+        20.167106,
+        72.905674
+      ],
+      "distance_m": 1619.309,
+      "score": 38.23,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 228,
+      "start": [
+        20.167106,
+        72.905674
+      ],
+      "end": [
+        20.195072,
+        72.889665
+      ],
+      "distance_m": 3530.124,
+      "score": 38.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 229,
+      "start": [
+        20.195072,
+        72.889665
+      ],
+      "end": [
+        20.211747,
+        72.882884
+      ],
+      "distance_m": 1984.614,
+      "score": 37.99,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 230,
+      "start": [
+        20.211747,
+        72.882884
+      ],
+      "end": [
+        20.224705,
+        72.882401
+      ],
+      "distance_m": 1441.745,
+      "score": 37.92,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 231,
+      "start": [
+        20.224705,
+        72.882401
+      ],
+      "end": [
+        20.246471,
+        72.883705
+      ],
+      "distance_m": 2424.09,
+      "score": 37.88,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 232,
+      "start": [
+        20.246471,
+        72.883705
+      ],
+      "end": [
+        20.279452,
+        72.892413
+      ],
+      "distance_m": 3778.142,
+      "score": 37.82,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 233,
+      "start": [
+        20.279452,
+        72.892413
+      ],
+      "end": [
+        20.298099,
+        72.900166
+      ],
+      "distance_m": 2225.544,
+      "score": 37.79,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 234,
+      "start": [
+        20.298099,
+        72.900166
+      ],
+      "end": [
+        20.336319,
+        72.905684
+      ],
+      "distance_m": 4288.646,
+      "score": 37.74,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 235,
+      "start": [
+        20.336319,
+        72.905684
+      ],
+      "end": [
+        20.349451,
+        72.908394
+      ],
+      "distance_m": 1487.296,
+      "score": 37.69,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 236,
+      "start": [
+        20.349451,
+        72.908394
+      ],
+      "end": [
+        20.364855,
+        72.921491
+      ],
+      "distance_m": 2190.447,
+      "score": 37.69,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 237,
+      "start": [
+        20.364855,
+        72.921491
+      ],
+      "end": [
+        20.38117,
+        72.914453
+      ],
+      "distance_m": 1956.871,
+      "score": 37.65,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 238,
+      "start": [
+        20.38117,
+        72.914453
+      ],
+      "end": [
+        20.395279,
+        72.912617
+      ],
+      "distance_m": 1580.477,
+      "score": 37.59,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 239,
+      "start": [
+        20.395279,
+        72.912617
+      ],
+      "end": [
+        20.411048,
+        72.916814
+      ],
+      "distance_m": 1807.167,
+      "score": 37.55,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 240,
+      "start": [
+        20.411048,
+        72.916814
+      ],
+      "end": [
+        20.419868,
+        72.915402
+      ],
+      "distance_m": 991.716,
+      "score": 37.52,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 241,
+      "start": [
+        20.419868,
+        72.915402
+      ],
+      "end": [
+        20.429252,
+        72.916637
+      ],
+      "distance_m": 1051.359,
+      "score": 37.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 242,
+      "start": [
+        20.429252,
+        72.916637
+      ],
+      "end": [
+        20.460108,
+        72.920321
+      ],
+      "distance_m": 3452.434,
+      "score": 37.44,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 243,
+      "start": [
+        20.460108,
+        72.920321
+      ],
+      "end": [
+        20.48046,
+        72.93478
+      ],
+      "distance_m": 2718.476,
+      "score": 37.41,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 244,
+      "start": [
+        20.48046,
+        72.93478
+      ],
+      "end": [
+        20.490913,
+        72.940038
+      ],
+      "distance_m": 1284.894,
+      "score": 37.41,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 245,
+      "start": [
+        20.490913,
+        72.940038
+      ],
+      "end": [
+        20.508053,
+        72.943216
+      ],
+      "distance_m": 1934.41,
+      "score": 37.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 246,
+      "start": [
+        20.508053,
+        72.943216
+      ],
+      "end": [
+        20.521153,
+        72.95623
+      ],
+      "distance_m": 1989.657,
+      "score": 37.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 247,
+      "start": [
+        20.521153,
+        72.95623
+      ],
+      "end": [
+        20.531867,
+        72.9593
+      ],
+      "distance_m": 1233.492,
+      "score": 37.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 248,
+      "start": [
+        20.531867,
+        72.9593
+      ],
+      "end": [
+        20.540926,
+        72.9589
+      ],
+      "distance_m": 1008.176,
+      "score": 37.37,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 249,
+      "start": [
+        20.540926,
+        72.9589
+      ],
+      "end": [
+        20.562287,
+        72.954505
+      ],
+      "distance_m": 2418.912,
+      "score": 37.31,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 250,
+      "start": [
+        20.562287,
+        72.954505
+      ],
+      "end": [
+        20.584284,
+        72.953221
+      ],
+      "distance_m": 2449.604,
+      "score": 37.23,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 251,
+      "start": [
+        20.584284,
+        72.953221
+      ],
+      "end": [
+        20.597837,
+        72.952051
+      ],
+      "distance_m": 1511.938,
+      "score": 37.17,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 252,
+      "start": [
+        20.597837,
+        72.952051
+      ],
+      "end": [
+        20.609674,
+        72.962194
+      ],
+      "distance_m": 1687.288,
+      "score": 37.15,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 253,
+      "start": [
+        20.609674,
+        72.962194
+      ],
+      "end": [
+        20.632836,
+        72.960787
+      ],
+      "distance_m": 2579.656,
+      "score": 37.12,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 254,
+      "start": [
+        20.632836,
+        72.960787
+      ],
+      "end": [
+        20.651326,
+        72.955904
+      ],
+      "distance_m": 2117.849,
+      "score": 37.04,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 255,
+      "start": [
+        20.651326,
+        72.955904
+      ],
+      "end": [
+        20.656057,
+        72.951737
+      ],
+      "distance_m": 681.707,
+      "score": 36.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 256,
+      "start": [
+        20.656057,
+        72.951737
+      ],
+      "end": [
+        20.668364,
+        72.949898
+      ],
+      "distance_m": 1381.787,
+      "score": 36.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 257,
+      "start": [
+        20.668364,
+        72.949898
+      ],
+      "end": [
+        20.676516,
+        72.950557
+      ],
+      "distance_m": 909.05,
+      "score": 36.9,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 258,
+      "start": [
+        20.676516,
+        72.950557
+      ],
+      "end": [
+        20.684952,
+        72.964251
+      ],
+      "distance_m": 1705.685,
+      "score": 36.91,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 259,
+      "start": [
+        20.684952,
+        72.964251
+      ],
+      "end": [
+        20.698355,
+        72.980488
+      ],
+      "distance_m": 2252.529,
+      "score": 36.95,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 260,
+      "start": [
+        20.698355,
+        72.980488
+      ],
+      "end": [
+        20.702231,
+        72.98778
+      ],
+      "distance_m": 872.386,
+      "score": 36.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 261,
+      "start": [
+        20.702231,
+        72.98778
+      ],
+      "end": [
+        20.711256,
+        73.003671
+      ],
+      "distance_m": 1933.652,
+      "score": 37.01,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 262,
+      "start": [
+        20.711256,
+        73.003671
+      ],
+      "end": [
+        20.713663,
+        73.01351
+      ],
+      "distance_m": 1057.757,
+      "score": 37.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 263,
+      "start": [
+        20.713663,
+        73.01351
+      ],
+      "end": [
+        20.719571,
+        73.021041
+      ],
+      "distance_m": 1022.287,
+      "score": 37.09,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 264,
+      "start": [
+        20.719571,
+        73.021041
+      ],
+      "end": [
+        20.731121,
+        73.030864
+      ],
+      "distance_m": 1641.056,
+      "score": 37.1,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 265,
+      "start": [
+        20.731121,
+        73.030864
+      ],
+      "end": [
+        20.744627,
+        73.041564
+      ],
+      "distance_m": 1869.091,
+      "score": 37.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 266,
+      "start": [
+        20.744627,
+        73.041564
+      ],
+      "end": [
+        20.761067,
+        73.056944
+      ],
+      "distance_m": 2428.836,
+      "score": 37.12,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 267,
+      "start": [
+        20.761067,
+        73.056944
+      ],
+      "end": [
+        20.782512,
+        73.063408
+      ],
+      "distance_m": 2477.467,
+      "score": 37.11,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 268,
+      "start": [
+        20.782512,
+        73.063408
+      ],
+      "end": [
+        20.796036,
+        73.066375
+      ],
+      "distance_m": 1535.105,
+      "score": 37.08,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 269,
+      "start": [
+        20.796036,
+        73.066375
+      ],
+      "end": [
+        20.805726,
+        73.071311
+      ],
+      "distance_m": 1193.405,
+      "score": 37.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 270,
+      "start": [
+        20.805726,
+        73.071311
+      ],
+      "end": [
+        20.820489,
+        73.069153
+      ],
+      "distance_m": 1656.824,
+      "score": 37.03,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 271,
+      "start": [
+        20.820489,
+        73.069153
+      ],
+      "end": [
+        20.826779,
+        73.067509
+      ],
+      "distance_m": 719.984,
+      "score": 36.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 272,
+      "start": [
+        20.826779,
+        73.067509
+      ],
+      "end": [
+        20.841915,
+        73.06432
+      ],
+      "distance_m": 1715.366,
+      "score": 36.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 273,
+      "start": [
+        20.841915,
+        73.06432
+      ],
+      "end": [
+        20.857513,
+        73.06286
+      ],
+      "distance_m": 1741.041,
+      "score": 36.88,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 274,
+      "start": [
+        20.857513,
+        73.06286
+      ],
+      "end": [
+        20.873097,
+        73.058797
+      ],
+      "distance_m": 1783.543,
+      "score": 36.81,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 275,
+      "start": [
+        20.873097,
+        73.058797
+      ],
+      "end": [
+        20.880783,
+        73.055392
+      ],
+      "distance_m": 924.967,
+      "score": 36.76,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 276,
+      "start": [
+        20.880783,
+        73.055392
+      ],
+      "end": [
+        20.891481,
+        73.047685
+      ],
+      "distance_m": 1433.921,
+      "score": 36.7,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 277,
+      "start": [
+        20.891481,
+        73.047685
+      ],
+      "end": [
+        20.89913,
+        73.042349
+      ],
+      "distance_m": 1015.217,
+      "score": 36.64,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 278,
+      "start": [
+        20.89913,
+        73.042349
+      ],
+      "end": [
+        20.909826,
+        73.028834
+      ],
+      "distance_m": 1839.949,
+      "score": 36.57,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 279,
+      "start": [
+        20.909826,
+        73.028834
+      ],
+      "end": [
+        20.918278,
+        73.014099
+      ],
+      "distance_m": 1796.03,
+      "score": 36.48,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 280,
+      "start": [
+        20.918278,
+        73.014099
+      ],
+      "end": [
+        20.921175,
+        73.006174
+      ],
+      "distance_m": 883.92,
+      "score": 36.41,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 281,
+      "start": [
+        20.921175,
+        73.006174
+      ],
+      "end": [
+        20.92994,
+        72.984726
+      ],
+      "distance_m": 2431.491,
+      "score": 36.32,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 282,
+      "start": [
+        20.92994,
+        72.984726
+      ],
+      "end": [
+        20.940585,
+        72.970248
+      ],
+      "distance_m": 1913.609,
+      "score": 36.21,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 283,
+      "start": [
+        20.940585,
+        72.970248
+      ],
+      "end": [
+        20.948409,
+        72.958963
+      ],
+      "distance_m": 1459.55,
+      "score": 36.12,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 284,
+      "start": [
+        20.948409,
+        72.958963
+      ],
+      "end": [
+        20.963869,
+        72.963002
+      ],
+      "distance_m": 1769.497,
+      "score": 36.07,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 285,
+      "start": [
+        20.963869,
+        72.963002
+      ],
+      "end": [
+        20.973456,
+        72.964247
+      ],
+      "distance_m": 1073.835,
+      "score": 36.04,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 286,
+      "start": [
+        20.973456,
+        72.964247
+      ],
+      "end": [
+        20.972789,
+        72.960887
+      ],
+      "distance_m": 356.659,
+      "score": 36.02,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 287,
+      "start": [
+        20.972789,
+        72.960887
+      ],
+      "end": [
+        20.974288,
+        72.955315
+      ],
+      "distance_m": 602.061,
+      "score": 36.0,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 288,
+      "start": [
+        20.974288,
+        72.955315
+      ],
+      "end": [
+        20.976163,
+        72.952113
+      ],
+      "distance_m": 392.42,
+      "score": 35.98,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 289,
+      "start": [
+        20.976163,
+        72.952113
+      ],
+      "end": [
+        20.977533,
+        72.949281
+      ],
+      "distance_m": 331.153,
+      "score": 35.96,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 290,
+      "start": [
+        20.977533,
+        72.949281
+      ],
+      "end": [
+        20.974462,
+        72.942608
+      ],
+      "distance_m": 772.414,
+      "score": 35.94,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 291,
+      "start": [
+        20.974462,
+        72.942608
+      ],
+      "end": [
+        20.974421,
+        72.939227
+      ],
+      "distance_m": 351.069,
+      "score": 35.92,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 292,
+      "start": [
+        20.974421,
+        72.939227
+      ],
+      "end": [
+        20.976876,
+        72.936907
+      ],
+      "distance_m": 364.063,
+      "score": 35.91,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 293,
+      "start": [
+        20.976876,
+        72.936907
+      ],
+      "end": [
+        20.984109,
+        72.933912
+      ],
+      "distance_m": 862.29,
+      "score": 35.88,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 294,
+      "start": [
+        20.984109,
+        72.933912
+      ],
+      "end": [
+        21.003339,
+        72.924557
+      ],
+      "distance_m": 2348.493,
+      "score": 35.81,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 295,
+      "start": [
+        21.003339,
+        72.924557
+      ],
+      "end": [
+        21.014066,
+        72.914267
+      ],
+      "distance_m": 1601.143,
+      "score": 35.72,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 296,
+      "start": [
+        21.014066,
+        72.914267
+      ],
+      "end": [
+        21.028554,
+        72.909426
+      ],
+      "distance_m": 1687.534,
+      "score": 35.65,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 297,
+      "start": [
+        21.028554,
+        72.909426
+      ],
+      "end": [
+        21.031941,
+        72.906987
+      ],
+      "distance_m": 453.784,
+      "score": 35.61,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 298,
+      "start": [
+        21.031941,
+        72.906987
+      ],
+      "end": [
+        21.048021,
+        72.912305
+      ],
+      "distance_m": 1871.256,
+      "score": 35.58,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 299,
+      "start": [
+        21.048021,
+        72.912305
+      ],
+      "end": [
+        21.057111,
+        72.911956
+      ],
+      "distance_m": 1011.411,
+      "score": 35.56,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 300,
+      "start": [
+        21.057111,
+        72.911956
+      ],
+      "end": [
+        21.06677,
+        72.896436
+      ],
+      "distance_m": 1935.743,
+      "score": 35.49,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 301,
+      "start": [
+        21.06677,
+        72.896436
+      ],
+      "end": [
+        21.07091,
+        72.891193
+      ],
+      "distance_m": 712.656,
+      "score": 35.43,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 302,
+      "start": [
+        21.07091,
+        72.891193
+      ],
+      "end": [
+        21.078814,
+        72.885199
+      ],
+      "distance_m": 1076.673,
+      "score": 35.39,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 303,
+      "start": [
+        21.078814,
+        72.885199
+      ],
+      "end": [
+        21.083797,
+        72.882603
+      ],
+      "distance_m": 616.08,
+      "score": 35.35,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 304,
+      "start": [
+        21.083797,
+        72.882603
+      ],
+      "end": [
+        21.088577,
+        72.881623
+      ],
+      "distance_m": 541.149,
+      "score": 35.33,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 305,
+      "start": [
+        21.088577,
+        72.881623
+      ],
+      "end": [
+        21.090147,
+        72.878812
+      ],
+      "distance_m": 339.892,
+      "score": 35.31,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 306,
+      "start": [
+        21.090147,
+        72.878812
+      ],
+      "end": [
+        21.093711,
+        72.875286
+      ],
+      "distance_m": 539.321,
+      "score": 35.29,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 307,
+      "start": [
+        21.093711,
+        72.875286
+      ],
+      "end": [
+        21.097241,
+        72.872154
+      ],
+      "distance_m": 509.554,
+      "score": 35.26,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 308,
+      "start": [
+        21.097241,
+        72.872154
+      ],
+      "end": [
+        21.102466,
+        72.865624
+      ],
+      "distance_m": 892.442,
+      "score": 35.23,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 309,
+      "start": [
+        21.102466,
+        72.865624
+      ],
+      "end": [
+        21.11503,
+        72.859895
+      ],
+      "distance_m": 1518.202,
+      "score": 35.18,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 310,
+      "start": [
+        21.11503,
+        72.859895
+      ],
+      "end": [
+        21.125231,
+        72.855641
+      ],
+      "distance_m": 1217.101,
+      "score": 35.12,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 311,
+      "start": [
+        21.125231,
+        72.855641
+      ],
+      "end": [
+        21.141352,
+        72.849438
+      ],
+      "distance_m": 1904.527,
+      "score": 35.06,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 312,
+      "start": [
+        21.141352,
+        72.849438
+      ],
+      "end": [
+        21.149028,
+        72.847668
+      ],
+      "distance_m": 873.048,
+      "score": 35.01,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 313,
+      "start": [
+        21.149028,
+        72.847668
+      ],
+      "end": [
+        21.155724,
+        72.844256
+      ],
+      "distance_m": 824.361,
+      "score": 34.97,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 314,
+      "start": [
+        21.155724,
+        72.844256
+      ],
+      "end": [
+        21.165337,
+        72.840708
+      ],
+      "distance_m": 1130.463,
+      "score": 34.93,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 315,
+      "start": [
+        21.165337,
+        72.840708
+      ],
+      "end": [
+        21.172632,
+        72.839004
+      ],
+      "distance_m": 830.188,
+      "score": 34.9,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 316,
+      "start": [
+        21.172632,
+        72.839004
+      ],
+      "end": [
+        21.18096,
+        72.832246
+      ],
+      "distance_m": 1161.261,
+      "score": 34.86,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 317,
+      "start": [
+        21.18096,
+        72.832246
+      ],
+      "end": [
+        21.181308,
+        72.82665
+      ],
+      "distance_m": 581.499,
+      "score": 34.82,
+      "quality": "moderate"
+    },
+    {
+      "segment_index": 318,
+      "start": [
+        21.181308,
+        72.82665
+      ],
+      "end": [
+        21.183124,
+        72.825169
+      ],
+      "distance_m": 253.682,
+      "score": 34.8,
+      "quality": "moderate"
     }
   ],
-  "route_score": 0.14139766,
-  "route_quality": "bad",
+  "route_score": 41.29,
+  "route_quality": "moderate",
+  "total_nearby_hits": 0,
+  "fallback_points_used": 638,
   "thresholds": {
-    "good": 0.0015,
-    "moderate": 0.004,
-    "bad": ">= 0.004"
+    "good": "< 20.0",
+    "moderate": "20.0 - 60.0",
+    "bad": "> 60.0"
   }
 }

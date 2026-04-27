@@ -76,7 +76,7 @@ def point_risk_score(
 def classify_segment(score: float, good_threshold: float, moderate_threshold: float) -> str:
     if score < good_threshold:
         return "good"
-    if score < moderate_threshold:
+    if score <= moderate_threshold:
         return "moderate"
     return "bad"
 
@@ -121,18 +121,21 @@ def score_route(
     route_points: Sequence[Coordinate],
     damage_points: Sequence[DamagePoint],
     radius_m: float = 120.0,
-    good_threshold: float = 0.0015,
-    moderate_threshold: float = 0.0040,
+    good_threshold: float = 20.0,
+    moderate_threshold: float = 60.0,
 ) -> Dict[str, object]:
     """
-    Step 7: Score route quality based on nearby road damage points.
+    Step 7: Score route quality based on nearby road damage points (0-100 scale).
 
     For each segment i (point i -> i+1):
     - compute risk at endpoints
     - segment score = average of endpoint risks
+    - scores scaled to 0-100 for readability
     """
     if len(route_points) < 2:
         raise ValueError("At least two route points are required")
+
+    SCALE_FACTOR = 10000.0  # Convert internal scores to 0-100 scale
 
     segments: List[Dict[str, object]] = []
     segment_scores: List[float] = []
@@ -151,16 +154,17 @@ def score_route(
         total_nearby_points += c1 + c2
         fallback_points_used += int(f1) + int(f2)
 
-        segment_scores.append(seg_score)
+        scaled_seg_score = seg_score * SCALE_FACTOR
+        segment_scores.append(scaled_seg_score)
         segments.append(
             {
                 "segment_index": i,
                 "start": [p1[0], p1[1]],
                 "end": [p2[0], p2[1]],
                 "distance_m": round(seg_distance_m, 3),
-                "score": round(seg_score, 8),
+                "score": round(scaled_seg_score, 2),
                 "quality": classify_segment(
-                    seg_score,
+                    scaled_seg_score,
                     good_threshold=good_threshold,
                     moderate_threshold=moderate_threshold,
                 ),
@@ -177,26 +181,26 @@ def score_route(
     return {
         "route_points": len(route_points),
         "segments": segments,
-        "route_score": round(route_score_value, 8),
+        "route_score": round(route_score_value, 2),
         "route_quality": route_quality,
         "total_nearby_hits": total_nearby_points,
         "fallback_points_used": fallback_points_used,
         "thresholds": {
-            "good": good_threshold,
-            "moderate": moderate_threshold,
-            "bad": f">= {moderate_threshold}",
+            "good": f"< {good_threshold}",
+            "moderate": f"{good_threshold} - {moderate_threshold}",
+            "bad": f"> {moderate_threshold}",
         },
     }
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Step 7: Compute route quality score")
+    parser = argparse.ArgumentParser(description="Step 7: Compute route quality score (0-100 scale)")
     parser.add_argument("--route-json", default="data/route_points.json")
     parser.add_argument("--damage-csv", default="data/geo_scored.csv")
     parser.add_argument("--output-json", default="data/route_scores.json")
     parser.add_argument("--radius-m", type=float, default=120.0)
-    parser.add_argument("--good-threshold", type=float, default=0.0015)
-    parser.add_argument("--moderate-threshold", type=float, default=0.0040)
+    parser.add_argument("--good-threshold", type=float, default=20.0)
+    parser.add_argument("--moderate-threshold", type=float, default=60.0)
     return parser
 
 
