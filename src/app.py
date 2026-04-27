@@ -34,18 +34,170 @@ def load_env_files() -> None:
     load_dotenv(Path(".env.local"), override=False)
 
 
-def parse_lat_lon(text: str) -> Tuple[float, float]:
-    parts = [p.strip() for p in text.split(",")]
-    if len(parts) != 2:
-        raise ValueError("Use format: lat,lon")
+def inject_custom_css() -> None:
+    st.markdown(
+        """
+        <style>
+        .block-container {
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        .main-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.06;
+            margin-bottom: 0.3rem;
+            color: #1f2937;
+        }
+        .subtitle {
+            color: #6b7280;
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+        }
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 14px 16px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+        }
+        .card-title {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        .card-value {
+            font-size: 2.15rem;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.1;
+        }
+        .status-chip {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: #eef2ff;
+            color: #3730a3;
+        }
+        .route-summary {
+            margin-top: 0.95rem;
+            margin-bottom: 0.85rem;
+            padding: 14px 16px;
+            border-radius: 12px;
+            border: 1px solid #dbeafe;
+            background: linear-gradient(180deg, #eff6ff 0%, #f8fbff 100%);
+        }
+        .route-summary-title {
+            font-size: 0.92rem;
+            color: #1d4ed8;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: 0.02em;
+        }
+        .route-summary-main {
+            font-size: 1.06rem;
+            color: #0f172a;
+            font-weight: 600;
+            line-height: 1.35;
+        }
+        .warn-badge {
+            display: inline-block;
+            margin-top: 0.35rem;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 1px solid #fed7aa;
+            background: #fff7ed;
+            color: #9a3412;
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
-    lat = float(parts[0])
-    lon = float(parts[1])
 
-    if not (-90 <= lat <= 90) or not (-180 <= lon <= 180):
-        raise ValueError("Latitude/longitude out of range")
+def simplify_route_points(route_points: List[Tuple[float, float]], max_points: int = 350) -> List[Tuple[float, float]]:
+    """Downsample dense route geometry for stable rendering and scoring."""
+    n = len(route_points)
+    if n <= max_points:
+        return route_points
 
-    return lat, lon
+    indices = []
+    for i in range(max_points):
+        idx = round(i * (n - 1) / (max_points - 1))
+        indices.append(idx)
+
+    # Preserve order while removing duplicates from rounding.
+    unique_indices = []
+    seen = set()
+    for idx in indices:
+        if idx not in seen:
+            unique_indices.append(idx)
+            seen.add(idx)
+
+    return [route_points[idx] for idx in unique_indices]
+
+
+def compress_segments(route_segments: List[dict]) -> List[dict]:
+    """Merge consecutive segments with identical quality to reduce map draw load."""
+    if not route_segments:
+        return []
+
+    merged: List[dict] = []
+    current = {
+        "quality": route_segments[0]["quality"],
+        "coords": [route_segments[0]["start"], route_segments[0]["end"]],
+        "scores": [float(route_segments[0]["score"])],
+    }
+
+    for seg in route_segments[1:]:
+        quality = seg["quality"]
+        if quality == current["quality"]:
+            current["coords"].append(seg["end"])
+            current["scores"].append(float(seg["score"]))
+        else:
+            merged.append(current)
+            current = {
+                "quality": quality,
+                "coords": [seg["start"], seg["end"]],
+                "scores": [float(seg["score"])],
+            }
+
+    merged.append(current)
+    return merged
+
+
+def filter_damage_points_for_route(
+    damage_df: pd.DataFrame,
+    route_segments: List[dict],
+    margin_deg: float = 0.75,
+) -> pd.DataFrame:
+    """Keep only damage points that fall near the chosen route corridor."""
+    if damage_df.empty or not route_segments:
+        return damage_df.iloc[0:0]
+
+    lat_vals = []
+    lon_vals = []
+    for seg in route_segments:
+        lat_vals.extend([float(seg["start"][0]), float(seg["end"][0])])
+        lon_vals.extend([float(seg["start"][1]), float(seg["end"][1])])
+
+    min_lat = min(lat_vals) - margin_deg
+    max_lat = max(lat_vals) + margin_deg
+    min_lon = min(lon_vals) - margin_deg
+    max_lon = max(lon_vals) + margin_deg
+
+    route_bbox = damage_df[
+        (damage_df["lat"] >= min_lat)
+        & (damage_df["lat"] <= max_lat)
+        & (damage_df["lon"] >= min_lon)
+        & (damage_df["lon"] <= max_lon)
+    ]
+
+    return route_bbox.sort_values("severity", ascending=False)
 
 
 def build_dashboard_map(
@@ -53,6 +205,7 @@ def build_dashboard_map(
     damage_df: pd.DataFrame,
     route_quality: str,
     route_score_value: float,
+    route_damage_df: pd.DataFrame,
 ) -> folium.Map:
     lat_vals = []
     lon_vals = []
@@ -68,23 +221,26 @@ def build_dashboard_map(
     else:
         center = [sum(lat_vals) / len(lat_vals), sum(lon_vals) / len(lon_vals)]
 
-    fmap = folium.Map(location=center, zoom_start=13, tiles="OpenStreetMap")
+    fmap = folium.Map(location=center, zoom_start=8, tiles="CartoDB positron")
 
-    # Base heatmap from known damage severity points.
-    heat_data = damage_df[["lat", "lon", "severity"]].values.tolist()
-    HeatMap(heat_data, min_opacity=0.35, radius=16, blur=14, max_zoom=17).add_to(fmap)
+    # Only render heatmap when there are damage points near the selected route.
+    if not route_damage_df.empty:
+        heat_df = route_damage_df.head(200)
+        heat_data = heat_df[["lat", "lon", "severity"]].values.tolist()
+        HeatMap(heat_data, min_opacity=0.35, radius=16, blur=14, max_zoom=17).add_to(fmap)
 
-    for seg in route_segments:
+    merged_segments = compress_segments(route_segments)
+    for seg in merged_segments:
         color = quality_to_color(str(seg["quality"]))
-        start = seg["start"]
-        end = seg["end"]
+        coords = seg["coords"]
+        avg_score = sum(seg["scores"]) / max(1, len(seg["scores"]))
 
         folium.PolyLine(
-            locations=[[start[0], start[1]], [end[0], end[1]]],
+            locations=[[c[0], c[1]] for c in coords],
             color=color,
-            weight=7,
-            opacity=0.95,
-            tooltip=f"Segment {seg['segment_index']} | {seg['quality']} | score={seg['score']:.6f}",
+            weight=8,
+            opacity=0.92,
+            tooltip=f"{str(seg['quality']).upper()} | Avg score: {avg_score:.6f}",
         ).add_to(fmap)
 
     first_start = route_segments[0]["start"]
@@ -103,11 +259,14 @@ def build_dashboard_map(
     ).add_to(fmap)
 
     title_html = f"""
-    <h4 style=\"margin: 8px 10px; font-family: Arial, sans-serif;\">
+        <h4 style=\"margin: 8px 10px; font-family: Segoe UI, Arial, sans-serif;\">
       Road Quality: {route_quality.upper()} | Route Score: {route_score_value:.6f}
     </h4>
     """
     fmap.get_root().html.add_child(folium.Element(title_html))
+
+    bounds = [[min(lat_vals), min(lon_vals)], [max(lat_vals), max(lon_vals)]]
+    fmap.fit_bounds(bounds, padding=(20, 20))
 
     return fmap
 
@@ -120,35 +279,27 @@ def main() -> None:
         layout="wide",
     )
 
-    st.title("Road Damage Detection and Route Quality Dashboard")
-    st.caption("Annotation-based pipeline: no ML model inference is used.")
+    inject_custom_css()
+
+    if "route_analysis" not in st.session_state:
+        st.session_state.route_analysis = None
+
+    st.markdown('<div class="main-title">Road Damage Detection and Route Quality Dashboard</div>', unsafe_allow_html=True)
+    st.markdown('<div class="subtitle">Address-driven routing, annotation-based severity scoring, and route risk visualization.</div>', unsafe_allow_html=True)
 
     with st.sidebar:
         st.subheader("Route Input")
-        input_mode = st.radio(
-            "Input type",
-            options=["Coordinates", "Place Names"],
-            index=1,
-            horizontal=False,
+        source_place = st.text_input("Source address", value="", placeholder="Enter source address")
+        destination_place = st.text_input(
+            "Destination address", value="", placeholder="Enter destination address"
         )
 
-        if input_mode == "Coordinates":
-            source_text = st.text_input("Source (lat,lon)", value="17.3850,78.4867")
-            destination_text = st.text_input(
-                "Destination (lat,lon)", value="17.4250,78.5267"
-            )
-            source_place = ""
-            destination_place = ""
-        else:
-            source_place = st.text_input("Source place", value="Hyderabad Railway Station")
-            destination_place = st.text_input(
-                "Destination place", value="Rajiv Gandhi International Airport Hyderabad"
-            )
-            source_text = ""
-            destination_text = ""
-
         radius_m = st.slider("Nearby damage radius (meters)", 30, 300, 120, 10)
-        generate_clicked = st.button("Generate Route", type="primary")
+        generate_clicked = st.button(
+            "Generate Route",
+            type="primary",
+            disabled=not (source_place.strip() and destination_place.strip()),
+        )
 
         key_in_env = bool(os.getenv("OPENROUTESERVICE_API_KEY"))
         st.caption(
@@ -156,69 +307,137 @@ def main() -> None:
             + ("found in environment" if key_in_env else "not found (set OPENROUTESERVICE_API_KEY)")
         )
 
+    if st.sidebar.button("Clear Result"):
+        st.session_state.route_analysis = None
+        st.rerun()
+
     if not GEO_SCORED_CSV.exists():
         st.error("Missing data/geo_scored.csv. Run Step 4 first.")
         return
 
     damage_df = pd.read_csv(GEO_SCORED_CSV)
 
-    if not generate_clicked:
-        st.info("Enter source and destination, then click Generate Route.")
-        return
-
-    try:
-        if input_mode == "Coordinates":
-            source = parse_lat_lon(source_text)
-            destination = parse_lat_lon(destination_text)
-        else:
+    if generate_clicked:
+        try:
             source = geocode_place_name(source_place)
             destination = geocode_place_name(destination_place)
-            st.caption(
-                f"Resolved coordinates: Source ({source[0]:.5f}, {source[1]:.5f}) | "
-                f"Destination ({destination[0]:.5f}, {destination[1]:.5f})"
+            st.markdown(
+                f"<span class='status-chip'>Resolved coordinates: Source ({source[0]:.5f}, {source[1]:.5f}) | Destination ({destination[0]:.5f}, {destination[1]:.5f})</span>",
+                unsafe_allow_html=True,
             )
-    except ValueError as exc:
-        st.error(f"Invalid source/destination input: {exc}")
-        return
-    except Exception as exc:
-        st.error(f"Failed to resolve place names: {exc}")
-        return
-
-    with st.spinner("Fetching route and scoring road quality..."):
-        try:
-            route_points = get_route(source=source, destination=destination)
+        except ValueError as exc:
+            st.error(f"Invalid source/destination input: {exc}")
+            return
         except Exception as exc:
-            st.error(f"Failed to fetch route from OpenRouteService: {exc}")
+            st.error(f"Failed to resolve place names: {exc}")
             return
 
-        damage_points = load_damage_points(GEO_SCORED_CSV)
-        score_payload = score_route(
-            route_points=route_points,
-            damage_points=damage_points,
-            radius_m=float(radius_m),
+        with st.spinner("Fetching route and scoring road quality..."):
+            try:
+                route_points = get_route(source=source, destination=destination)
+            except Exception as exc:
+                st.error(f"Failed to fetch route from OpenRouteService: {exc}")
+                return
+
+            route_points = simplify_route_points(route_points, max_points=320)
+            damage_points = load_damage_points(GEO_SCORED_CSV)
+            score_payload = score_route(
+                route_points=route_points,
+                damage_points=damage_points,
+                radius_m=float(radius_m),
+            )
+
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        ROUTE_POINTS_JSON.write_text(json.dumps(route_points, indent=2), encoding="utf-8")
+        ROUTE_SCORES_JSON.write_text(json.dumps(score_payload, indent=2), encoding="utf-8")
+
+        st.session_state.route_analysis = {
+            "source_place": source_place,
+            "destination_place": destination_place,
+            "resolved_source": source,
+            "resolved_destination": destination,
+            "radius_m": float(radius_m),
+            "route_points": route_points,
+            "score_payload": score_payload,
+        }
+
+    analysis = st.session_state.route_analysis
+    if not analysis:
+        st.info("Enter source and destination addresses, then click Generate Route.")
+        return
+
+    score_payload = analysis["score_payload"]
+    route_points = analysis["route_points"]
+
+    st.markdown(
+        f"<span class='status-chip'>Source: {analysis['source_place']} | Destination: {analysis['destination_place']}</span>",
+        unsafe_allow_html=True,
+    )
+
+    route_damage_df = filter_damage_points_for_route(damage_df, score_payload["segments"])
+    if route_damage_df.empty:
+        st.markdown(
+            "<span class='warn-badge'>No nearby damage points for this route</span>",
+            unsafe_allow_html=True,
         )
+    else:
+        st.caption(f"Showing {len(route_damage_df)} damage points near the selected route.")
 
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    ROUTE_POINTS_JSON.write_text(json.dumps(route_points, indent=2), encoding="utf-8")
-    ROUTE_SCORES_JSON.write_text(json.dumps(score_payload, indent=2), encoding="utf-8")
+    st.markdown(
+        f"""
+        <div class='route-summary'>
+            <div class='route-summary-title'>ROUTE SUMMARY</div>
+            <div class='route-summary-main'>
+                {analysis['source_place']} → {analysis['destination_place']}<br/>
+                Quality: <b>{str(score_payload['route_quality']).upper()}</b> |
+                Score: <b>{float(score_payload['route_score']):.8f}</b> |
+                Segments: <b>{len(score_payload['segments'])}</b>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Route Quality", str(score_payload["route_quality"]).upper())
-    c2.metric("Route Score", f"{float(score_payload['route_score']):.6f}")
-    c3.metric("Segments", f"{len(score_payload['segments'])}")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.markdown(
+        f"<div class='card'><div class='card-title'>Route Quality</div><div class='card-value'>{str(score_payload['route_quality']).upper()}</div></div>",
+        unsafe_allow_html=True,
+    )
+    c2.markdown(
+        f"<div class='card'><div class='card-title'>Route Score</div><div class='card-value'>{float(score_payload['route_score']):.8f}</div></div>",
+        unsafe_allow_html=True,
+    )
+    c3.markdown(
+        f"<div class='card'><div class='card-title'>Segments</div><div class='card-value'>{len(score_payload['segments'])}</div></div>",
+        unsafe_allow_html=True,
+    )
+    c4.markdown(
+        f"<div class='card'><div class='card-title'>Nearby Damage Hits</div><div class='card-value'>{int(score_payload.get('total_nearby_hits', 0))}</div></div>",
+        unsafe_allow_html=True,
+    )
+
+    st.caption(
+        "Higher score means the route passes closer to more damage points. "
+        "When no nearby damage exists, the fallback score keeps the route informative instead of zero."
+    )
 
     route_map = build_dashboard_map(
         route_segments=score_payload["segments"],
         damage_df=damage_df,
         route_quality=str(score_payload["route_quality"]),
         route_score_value=float(score_payload["route_score"]),
+        route_damage_df=route_damage_df,
     )
 
-    st_folium(route_map, width=1200, height=650)
+    st_folium(route_map, height=820, use_container_width=True, key="route_map")
 
-    with st.expander("Segment-level scores"):
+    with st.expander("Segment-level scores", expanded=False):
         seg_df = pd.DataFrame(score_payload["segments"])
-        st.dataframe(seg_df[["segment_index", "distance_m", "score", "quality"]], use_container_width=True)
+        st.dataframe(
+            seg_df[["segment_index", "distance_m", "score", "quality"]],
+            use_container_width=True,
+            height=320,
+        )
 
 
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ def point_risk_score(
     damage_points: Sequence[DamagePoint],
     radius_m: float,
     epsilon_m: float = 5.0,
-) -> float:
+) -> Tuple[float, int, bool]:
     """
     Compute local risk at one route point using nearby damage points.
 
@@ -44,6 +44,7 @@ def point_risk_score(
     Only points within radius_m contribute.
     """
     score = 0.0
+    nearby_count = 0
 
     for d_lat, d_lon, severity in damage_points:
         distance_m = haversine_distance_m(route_point, (d_lat, d_lon))
@@ -51,8 +52,25 @@ def point_risk_score(
             continue
 
         score += float(severity) / max(distance_m, epsilon_m)
+        nearby_count += 1
 
-    return score
+    if nearby_count > 0:
+        return score, nearby_count, False
+
+    # Fallback: use k-nearest damage points with a km-scaled decay so long routes
+    # still produce a meaningful non-zero quality score in simulation mode.
+    k_nearest = 12
+    nearest: List[Tuple[float, float]] = []
+    for d_lat, d_lon, severity in damage_points:
+        distance_m = haversine_distance_m(route_point, (d_lat, d_lon))
+        nearest.append((distance_m, float(severity)))
+
+    nearest.sort(key=lambda item: item[0])
+    fallback_score = 0.0
+    for distance_m, severity in nearest[:k_nearest]:
+        fallback_score += severity / (distance_m / 1000.0 + 1.0)
+
+    return fallback_score, 0, True
 
 
 def classify_segment(score: float, good_threshold: float, moderate_threshold: float) -> str:
@@ -118,15 +136,20 @@ def score_route(
 
     segments: List[Dict[str, object]] = []
     segment_scores: List[float] = []
+    total_nearby_points = 0
+    fallback_points_used = 0
 
     for i in range(len(route_points) - 1):
         p1 = route_points[i]
         p2 = route_points[i + 1]
 
-        s1 = point_risk_score(p1, damage_points, radius_m=radius_m)
-        s2 = point_risk_score(p2, damage_points, radius_m=radius_m)
+        s1, c1, f1 = point_risk_score(p1, damage_points, radius_m=radius_m)
+        s2, c2, f2 = point_risk_score(p2, damage_points, radius_m=radius_m)
         seg_score = (s1 + s2) / 2.0
         seg_distance_m = haversine_distance_m(p1, p2)
+
+        total_nearby_points += c1 + c2
+        fallback_points_used += int(f1) + int(f2)
 
         segment_scores.append(seg_score)
         segments.append(
@@ -156,6 +179,8 @@ def score_route(
         "segments": segments,
         "route_score": round(route_score_value, 8),
         "route_quality": route_quality,
+        "total_nearby_hits": total_nearby_points,
+        "fallback_points_used": fallback_points_used,
         "thresholds": {
             "good": good_threshold,
             "moderate": moderate_threshold,
